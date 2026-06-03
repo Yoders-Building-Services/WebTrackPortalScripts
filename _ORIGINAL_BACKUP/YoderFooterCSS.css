@@ -1,0 +1,470 @@
+/* Add some styling to the product group cards */
+
+:root {
+    --primary-color: #bd2427;
+    --secondary-color: #120e0e;
+    --top-nav-item-color: white;
+    --top-nav-color: #bd2427;
+    --banner-color: white;
+    --slider-menu-color: #bd2427;
+}
+
+.text-truncate {
+    overflow: visible;
+    white-space: normal;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+
+.ProductCard .text-truncate {
+    height: auto;
+}
+
+.CardSet {
+    height: auto !important;
+}
+
+.productNameLink {
+    white-space: normal;
+}
+
+.productDescriptionRow {
+    height: 2.8em;
+}
+
+
+/* Branding styles */
+
+#productGroupCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+
+#productGroupCard:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Button styling */
+
+.btn-primary {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-button {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-button:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-quicklists>a {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-quicklists>a:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+#ctl00_PageBody_ApplySearchParametersImageButton {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+#ctl00_PageBody_ApplySearchParametersImageButton:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-action>div>a {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-action>div>a:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-addresses>a {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-addresses>a:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-contacts>a {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-contacts>a:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-notepad>a {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-notepad>a:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-opportunities>a {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.epi-search-opportunities>a:hover {
+    background-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.ProductGroupsDeskTopMenuItem a {
+    font-size: 15px;
+}
+
+
+/* Change the smallest menu item hover css */
+
+.RadSiteMap_Windows7 .rsmTwoLevels .rsmLevel1 .rsmLink:hover {
+    background-color: initial;
+    background-image: initial;
+    border-color: white;
+    color: var(--primary-color);
+}
+
+
+/* Change the color of the expand right submenu text */
+
+.RadSiteMap .rsmLink {
+    color: black;
+    /* CHANGE HERE the color */
+}
+
+
+/* Change the colors of the list items on hover for the menu */
+
+.RadMenu_MetroTouch .rmGroup .rmExpanded>.rmLink {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+
+/* Change color of active page number box and move it to the background when slider menu is in use */
+
+.page-item.active .page-link {
+    z-index: 0;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/*Change font color of first level headings of slider menu */
+
+a.rmLink.rmExpand.rmExpandRight {
+    color: black;
+}
+
+
+/* sub-menu headings */
+
+.rsmItem a {
+    font-size: 14px;
+}
+
+
+/* sub-menu list items */
+
+.rsmLevel1 a {
+    font-size: 12px;
+}
+
+.RadSiteMap .rsmTwoLevels>.rsmItem>.rsmLink {
+    font-size: 17px;
+}
+
+
+/* Hide product count shown at bottom of product group image tile */
+
+.productGroupDrillDownCount {
+    display: none;
+}
+
+
+/* show menu button */
+
+.RadMenu_MetroTouch .rmRootGroup {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-style: none;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+.RadMenu_MetroTouch .rmRootGroup .rmExpanded>.rmRootLink {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-style: none;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* Change to 'Shop By Department' button */
+
+.RadMenu .rmRootGroup.rmHorizontal>.rmItem {
+    border-style: none;
+}
+
+
+/* Change color of colour of all main nav items */
+
+i.fas.fa-shopping-cart {
+    color: var(--top-nav-item-color);
+    /* CHANGE HERE the color */
+}
+
+i.fas.fa-shopping-cart:hover {
+    color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+i.fas.fa-bookmark {
+    color: var(--top-nav-item-color);
+    /* CHANGE HERE the color */
+}
+
+i.fas.fa-bookmark:hover {
+    color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+.main-nav a.nav-link {
+    color: var(--top-nav-item-color);
+    /* CHANGE HERE the color */
+}
+
+.main-nav a.nav-link:hover {
+    color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+
+/* Update font color of 'Forgot Password' on sign in page */
+
+a.text-primary {
+    color: var(--primary-color) !important;
+    /* CHANGE HERE the color */
+}
+
+a.text-primary:hover {
+    color: var(--secondary-color) !important;
+    /* CHANGE HERE the color */
+}
+
+
+/* Update font color of text on sign in page */
+
+.form-small {
+    color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+
+/* Update Account Information page */
+
+td.panelBodyHeader.panelAccountInfoSubtitle {
+    color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+td.listPageHeader {
+    color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+
+/* Change text in page footer */
+
+.site-footer .footer-panel {
+    color: #494949;
+    /* CHANGE HERE the color */
+}
+
+
+/* Changes to header */
+
+
+/* Don't forget to remove height from branding-logo, set img width 100%, height auto for responsiveness */
+
+div#siteHeaderContent {
+    margin: 0px 20px;
+    max-width: 650px;
+}
+
+#brandingLogo {
+    width: 150%;
+    text-align: left;
+    padding: 5px;
+}
+
+ul.menu-t1.menu-visible a.nav-link {
+    color: var(--secondary-color);
+    /* CHANGE HERE the color */
+}
+
+#brandingLogo>span>pre>a>img {
+    /* width: 100% !important;
+    height: auto !important; */
+}
+
+#ctl00_PageHeader_branding {
+    padding: 7px 0 5px;
+    text-align: center;
+}
+
+div#PageHeaderDiv {
+    position: relative;
+    /* background-color: var(--banner-color); */
+    /* background-image: linear-gradient(0deg, rgba(18,14,14,0.7), rgba(239,75,62,0.7)); */
+}
+
+.sticky-header {
+    box-shadow: none;
+    background-color: var(--top-nav-color);
+}
+
+span.rmLink.rmRootLink.rmExpand.rmExpandDown {
+    background-color: var(--slider-menu-color);
+    /* CHANGE HERE the color */
+    color: #fff;
+}
+
+pre {
+    margin-bottom: 0px;
+    font-size: 0%;
+}
+
+
+/* fix background of main page and items per page */
+
+.container-fluid {
+    padding-top: 10px;
+    background-color: #f6f6f6;
+}
+
+span.currentItemsPerPageStyle {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.paging-control {
+    background-color: #dde7e8;
+    color: #494949;
+}
+
+.items-per-page-label {
+    font-weight: lighter;
+}
+
+
+/* Fix issue with images being stretched */
+
+#ctl00_PageBody_productDetail_ProductImage {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    min-width: 0%;
+    min-height: 0%;
+}
+
+.ThumbnailImage {
+    max-height: 100px;
+    max-width: 100px;
+    height: auto;
+    width: auto;
+    min-width: 0%;
+    min-height: 0%;
+}
+
+.productImage {
+    max-height: 100%;
+    max-width: 90%;
+    /* height: auto; */
+    width: auto;
+    min-width: 0%;
+    min-height: 0%;
+}
+
+
+/* Hide the featured product column in the slider menu */
+
+.Flyout_Featured {
+    display: none;
+}

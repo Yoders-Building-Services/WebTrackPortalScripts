@@ -1,0 +1,755 @@
+/* Styles for the custom 'About Us' page */
+
+:root {
+    --primary-color: #bd2427;
+    --secondary-color: #120e0e;
+}
+
+#aboutUs {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#title {
+    padding: 10%;
+}
+
+#aboutContent {
+    padding-bottom: 20px;
+}
+
+#aboutContent .imgLinks {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    margin-left: 22%;
+}
+
+#aboutContent .imgLinks {
+    list-style: none;
+    text-align: center;
+    list-style-position: outside;
+    direction: ltr;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: -10px;
+    width: 101%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+}
+
+.crop {
+    width: 222px;
+    height: 197px;
+    overflow: hidden;
+}
+
+.footer {
+    text-align: center;
+    padding-left: 0;
+}
+
+hr {
+    width: 70%;
+    border: solid #d1d2be;
+    border-width: 1px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutContent .imgLinks li {
+    float: left;
+    padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    #aboutContent .imgLinks li {
+        clear: both;
+    }
+}
+
+#aboutContent .imgLinks li a {
+    text-decoration: none;
+}
+
+.social {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.social li {
+    display: inline;
+    clear: both;
+    padding-right: 0.5em;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+.social h5 {
+    color: white;
+    font-size: large;
+}
+
+div#aboutContent {
+    text-align: center;
+}
+
+div#aboutContent p {
+    color: #000;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.listItemBreak {
+    padding: 1%;
+}
+
+#aboutContent header {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#aboutContent header h2 {
+    font-size: xx-large;
+}
+
+div#aboutContent h2 {
+    padding-top: 40px;
+}
+
+#aboutContent header p {
+    margin: auto;
+}
+
+#contactButtonMainSite p {
+    font-size: large;
+    margin: 3% 25%;
+}
+
+.contact {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    text-decoration: none;
+    margin: 2.5em 0 0 0;
+    padding: 0 0 0 3.25em;
+    position: relative;
+}
+
+#contact {
+    background-color: #bdbea2;
+}
+
+.contactLinkButton {
+    display: inline-block;
+    padding: 0.8em 4em;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.45s;
+    max-width: 60%;
+    color: #fff;
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.contactLinkButton:hover {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+@media all and (max-width: 30em) {
+    .contactLinkButton {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+
+/* Styles for custom home page */
+
+#homePage {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#wrapper>header {
+    padding: 11em 0 2.25em 0;
+}
+
+#wrapper>header .inner {
+    margin: 0 auto;
+    width: 55em;
+}
+
+.wrapper {
+    margin: 6.5em 0;
+    position: relative;
+}
+
+.wrapper:before,
+.wrapper:after {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: "";
+    display: block;
+    height: 6.5em;
+    position: absolute;
+    width: 100%;
+}
+
+.wrapper:before {
+    left: 0;
+    top: -6.5em;
+}
+
+.wrapper .inner {
+    margin: 0 auto;
+}
+
+.wrapper.spotlight .inner {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: right;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: right;
+    border: 1px solid lightgray;
+    padding: 3em 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.35s linear;
+}
+
+.wrapper.spotlight .inner:hover {
+    transform: scale(1.005);
+}
+
+.wrapper.spotlight .inner h2 {
+    color: black;
+}
+
+.wrapper.spotlight .image {
+    -ms-flex: 1;
+    margin: 0 5%;
+}
+
+.wrapper.spotlight.style2 .image {
+    margin-left: 0;
+    margin-right: 5%;
+}
+
+.wrapper.spotlight .image img {
+    margin: 0 3em 2em 0;
+    -ms-flex: 1;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.35s linear;
+    width: 80%;
+    float: left;
+}
+
+.wrapper.spotlight .image img:hover {
+    transform: scale(1.005);
+}
+
+.wrapper.spotlight .content {
+    -ms-flex: 2;
+    margin: 0 5%;
+}
+
+.wrapper.spotlight.style2 .inner {
+    -moz-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.wrapper.spotlight.style2 .image img {
+    float: right;
+}
+
+header {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.wrapper.spotlight .helpContent {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 5%;
+}
+
+.helpLinkList {
+    list-style: none;
+    width: 50%;
+    margin: 20px 5%;
+}
+
+#firstContentCardOnHomePage {
+    width: 200%;
+}
+
+@media screen and (max-width: 1150px) {
+    .helpLinkList {
+        margin: 0 auto;
+    }
+    .wrapper.spotlight .helpContent {
+        margin: 20px auto;
+    }
+    #firstContentCardOnHomePage {
+        width: 90%;
+    }
+    .wrapper:before,
+    .wrapper:after {
+        height: 4.75em;
+    }
+    .wrapper.spotlight .image {
+        margin-left: 0;
+    }
+    .wrapper.spotlight.style2 .image {
+        margin-right: 0;
+    }
+    .wrapper.spotlight .image img {
+        float: none;
+    }
+    .wrapper.wrapper.spotlight.style2 .image img {
+        float: none;
+    }
+    .wrapper.spotlight .inner {
+        display: block;
+    }
+    .wrapper.spotlight .inner {
+        text-align: center;
+    }
+    .wrapper.spotlight.style2 .inner {
+        text-align: center;
+    }
+    .wrapper:before {
+        top: -4.75em;
+    }
+    .wrapper:after {
+        bottom: -4.75em;
+        left: 0;
+    }
+    .wrapper .inner {
+        width: 100%;
+    }
+    .wrapper.wrapper.spotlight .image img {
+        width: 50%;
+    }
+    .wrapper.spotlight .image img {
+        margin-bottom: 5%;
+    }
+}
+
+div#homeContent {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 560px) {
+    div#homeContent {
+        width: 100%;
+    }
+}
+
+div#homeContent p {
+    color: #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+
+div#homeContent span {
+    color: #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+
+.footer {
+    text-align: center;
+}
+
+.social {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.social li {
+    display: inline;
+    clear: both;
+    padding-right: 0.5em;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+.social h5 {
+    color: white;
+    font-size: large;
+}
+
+.contactLinkButton {
+    display: inline-block;
+    padding: 0.8em 4em;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.75s;
+    max-width: 60%;
+    color: #fff;
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    border-color: var(--primary-color);
+    /* CHANGE HERE the color */
+}
+
+.contactLinkButton:hover {
+    background-color: var(--primary-color);
+    /* CHANGE HERE the color */
+    transform: scale(1.03);
+}
+
+.learnMoreButton {
+    text-decoration: none;
+    font-size: large;
+    color: var(--primary-color);
+    /* CHANGE HERE the color */
+    font-weight: 600;
+    transition: all 0.75s;
+}
+
+#contactButtonIntro {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.learnMoreButton:hover {
+    color: var(--primary-color);
+    /* CHANGE HERE the color */
+    transform: scale(1.01);
+}
+
+.learnMoreButton img {
+    margin-right: 5%;
+    width: 32px;
+    height: 32px;
+}
+
+section p {
+    font-size: large;
+}
+
+section span {
+    font-size: large;
+}
+
+ul.aboutList {
+    text-align: left;
+}
+
+ul.aboutList>li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a.nav-link[href="Quicklists_r.aspx"] {
+    font-weight: 800 !important;
+}
+
+ul#quicklist-items>li>a {
+    color: var(--secondary-color) !important;
+    font-weight: 700;
+}
+
+ul#quicklist-items>li>a:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+    border-radius: 5px;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: var(--secondary-color) !important;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background-color: white;
+}
+
+.helpLinkList {
+    list-style: none;
+    width: 50%;
+    margin: 20px 5%;
+}
+
+button#dropdownMenuButton {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+button.epi-button {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+
+/* 
+ul.rmRootGroup.rmVertical>li:nth-child(10),
+li#ctl00_MainMenu_CallOffOrdersItem {
+    display: none;
+} */
+
+li#ctl00_MainMenu_CallOffOrdersItem {
+    display: none;
+}
+
+div#SpecialText {
+    font-size: 14px;
+    /* width: 300px; */
+    /* padding: 10px; */
+    display: inline-block;
+    height: 50px;
+    /* border: 2px solid var(--primary-color); */
+    background-color: #0a0405;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 20%;
+}
+
+div#checkoutButtonText {
+    font-size: 14px;
+    /* width: 300px; */
+    /* padding: 10px; */
+    display: inline-block;
+    height: 50px;
+    /* border: 2px solid var(--primary-color); */
+    background-color: #bd2427;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 20%;
+}
+
+div#SpecialTextDiv {
+    position: absolute;
+    top: -15%;
+    right: 1%;
+    /* margin: -180px 20px;
+    float: right; */
+    /* height: 200px; */
+    transition: all 0.5s;
+}
+
+div#checkoutButtonDiv {
+    position: absolute;
+    top: 35%;
+    right: 1%;
+    /* margin: -180px 20px;
+    float: right; */
+    /* height: 200px; */
+    transition: all 0.5s;
+}
+
+div#SpecialText,
+div#SpecialText>a {
+    color: white;
+    line-height: 55px;
+    margin-left: 10px;
+    height: 100%;
+}
+
+div#checkoutButtonText,
+div#checkoutButtonText>a {
+    color: white;
+    line-height: 55px;
+    margin-left: 10px;
+    height: 100%;
+}
+
+div#SpecialText:hover {
+    cursor: pointer;
+}
+
+div#checkoutButtonText:hover {
+    cursor: pointer;
+}
+
+div#SpecialText>img {
+    /* width: 15%; */
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+    float: right;
+    /* margin-right: 5px; */
+    color: white;
+    /* right: 36%; */
+    margin-left: 0px;
+    background: #0a0405;
+}
+
+div#checkoutButtonText>img {
+    /* width: 15%; */
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+    float: right;
+    /* margin-right: 5px; */
+    color: white;
+    /* right: 36%; */
+    margin-left: 0px;
+    background: #bd2427;
+}
+
+div#SpecialTextDiv:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.01);
+}
+
+div#checkoutButtonDiv:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.01);
+}
+
+img#SpecialTextImg {
+    HEIGHT: auto;
+    width: 100%;
+}
+
+div.ProductGroupMenuHeader {
+    background-color: var(--primary-color) !important;
+}
+
+div#WTPageTitle {
+    color: #bd2427;
+    font-weight: bold;
+}
+
+div#WTPageTitle>a>span {
+    color: #bd2427;
+    font-weight: bold;
+}
+
+div#pageTitleHeader {
+    margin-top: 10px;
+    margin-right: 40px;
+    float: right;
+}
+
+#brandingLogo>span>pre>a>img {
+    width: 35% !important;
+}
+
+div#siteHeaderContent {
+    /* margin: 0px 20px; */
+    max-width: unset !important;
+    width: 100% !important;
+}
+
+@media screen and (max-width: 1100px) {
+    div#pageTitleHeader {
+        margin-top: 10px;
+        position: unset;
+        top: 26%;
+        right: 1%;
+        float: none;
+        margin-right: 0px;
+    }
+}
+
+@media all and (max-width: 30em) {
+    .contactLinkButton {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    div#SpecialText {
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+        display: inline-block;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 2px;
+        margin-top: 20px !important;
+    }
+    div#checkoutButtonText {
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+        display: inline-block;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 2px;
+        margin-top: 20px !important;
+    }
+    div#SpecialTextDiv {
+        position: unset;
+        top: unset;
+        right: unset;
+        margin: 0px 20px;
+        max-width: 650px;
+        /* float: right */
+        display: unset !important;
+        float: unset !important;
+    }
+    div#checkoutButtonDiv {
+        position: unset;
+        top: unset;
+        right: unset;
+        margin: 0px 20px;
+        max-width: 650px;
+        /* float: right */
+        display: unset !important;
+        float: unset !important;
+    }
+    div#SpecialText,
+    div#SpecialText>a {
+        line-height: 45px;
+    }
+    div#checkoutButtonText,
+    div#checkoutButtonText>a {
+        line-height: 45px;
+    }
+}
