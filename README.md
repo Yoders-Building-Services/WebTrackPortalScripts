@@ -19,6 +19,17 @@ Navigate to:
 - `webtrack-snippets/YoderHeaderScripts.html` goes in **Page Header Scripts**
 - `webtrack-snippets/YoderFooterScripts.html` goes in **Page Footer Scripts**
 
+### Critical last step: Synchronize
+
+After you paste and save the scripts, switch to the **`Sync Data`** tab (same tab
+level as Page Content) and click **`Synchronize`**.
+
+**Saving alone does nothing to the live site.** The customer portal reads a
+*synced copy* of these scripts, not the ones you just saved. Until you click
+Synchronize, your edit sits in BisTrack and `wt.goyoders.com` keeps serving the
+old version. This one cost hours of debugging: the save looked successful, the
+page never changed, because the sync had not run.
+
 The page bodies (the "Please wait while content loads" placeholder divs in
 `webtrack-snippets/*Div.html`) live in the WebTrack page content itself, where
 the header script's `.load()` calls inject the real About/Home/Help content.
@@ -31,6 +42,36 @@ the header script's `.load()` calls inject the real About/Home/Help content.
 - `images/` — logos, favicon, page images
 - `webtrack-snippets/` — the header/footer blocks pasted into WebTrack itself
   (reference; not served as part of the site)
+
+## Browse the hosted files
+
+This README is served on GitHub Pages, so the links below open the live files.
+Use your browser Back button to return here (the script files can't link back to
+this page on their own).
+
+**Page content** (the bodies the portal injects)
+- [About page](content/YoderAboutPage.html)
+- [Home page](content/YoderHomePage.html)
+- [Help page](content/YoderHelpPage.html)
+
+**Stylesheets**
+- [Header CSS](css/YoderHeaderCSS.css)
+- [Footer CSS](css/YoderFooterCSS.css)
+
+**Scripts**
+- [Header JS](js/YoderHeaderJS.js)
+- [Footer JS](js/YoderFooterJS.js)
+
+**Images**
+- [Favicon](images/Yoder-Favicon.png)
+- [Yoder WebTrack logo](images/Yoder-Webtrack-Logo.png) / [Yoders Building Services logo](images/Yoders-Building-Services-Logo.png)
+- [Nav logo](images/output-onlinepngtools.png) / [Nav logo (alt)](images/output-onlinepngtools-21.png)
+- About: [image 1](images/About_Page1.jpg) / [image 2](images/About_Page_Image_2.jpg) / [image 3](images/About_Page3.jpg)
+- Home: [image 1](images/Home_Page_Image_1.jpg) / [image 2](images/Home_Page_Image_2.jpg) / [image 3](images/Home_Page_Image_3.jpg)
+
+**WebTrack paste-in blocks** (go into BisTrack, not served as part of the site)
+- [Header scripts block](webtrack-snippets/YoderHeaderScripts.html)
+- [Footer scripts block](webtrack-snippets/YoderFooterScripts.html)
 
 ## Live URL base
 
