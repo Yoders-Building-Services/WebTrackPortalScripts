@@ -27,8 +27,7 @@ level as Page Content) and click **`Synchronize`**.
 **Saving alone does nothing to the live site.** The customer portal reads a
 *synced copy* of these scripts, not the ones you just saved. Until you click
 Synchronize, your edit sits in BisTrack and `wt.goyoders.com` keeps serving the
-old version. This one cost hours of debugging: the save looked successful, the
-page never changed, because the sync had not run.
+old version.
 
 The page bodies (the "Please wait while content loads" placeholder divs in
 `webtrack-snippets/*Div.html`) live in the WebTrack page content itself, where
@@ -46,8 +45,6 @@ the header script's `.load()` calls inject the real About/Home/Help content.
 ## Browse the hosted files
 
 This README is served on GitHub Pages, so the links below open the live files.
-Use your browser Back button to return here (the script files can't link back to
-this page on their own).
 
 **Page content** (the bodies the portal injects)
 - [About page](content/YoderAboutPage.html)
