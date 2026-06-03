@@ -1,0 +1,59 @@
+<!-- ============================================================ -->
+<!-- WebTrack HEADER section. Paste this into the WebTrack header. -->
+<!-- All custom files now load from GitHub Pages, not Dropbox.    -->
+<!-- ============================================================ -->
+
+<!-- Favicon (now on GitHub Pages) -->
+<link
+  rel="icon"
+  type="image/png"
+  href="https://yoders-building-services.github.io/WebTrackPortalScripts/images/Yoder-Favicon.png"
+/>
+
+<!-- jQuery + UI + Popper + Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link
+  rel="stylesheet"
+  href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+/>
+<!-- jQuery UI now loads from the jQuery CDN (the old scripts/ copy was 404ing) -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+
+<!-- Header CSS (now on GitHub Pages) -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://yoders-building-services.github.io/WebTrackPortalScripts/css/YoderHeaderCSS.css"
+/>
+
+<!-- Header JavaScript (now on GitHub Pages) -->
+<script src="https://yoders-building-services.github.io/WebTrackPortalScripts/js/YoderHeaderJS.js"></script>
+
+<!-- Load 'About Us' page content (now on GitHub Pages) -->
+<script>
+  $(function () {
+    $("#aboutUsPageContent").load(
+      "https://yoders-building-services.github.io/WebTrackPortalScripts/content/YoderAboutPage.html"
+    );
+  });
+</script>
+
+<!-- Load home page content (now on GitHub Pages) -->
+<script>
+  $(function () {
+    $("#homePageContent").load(
+      "https://yoders-building-services.github.io/WebTrackPortalScripts/content/YoderHomePage.html"
+    );
+  });
+</script>
+
+<!-- Load help page content (now on GitHub Pages) -->
+<script>
+  $(function () {
+    $("#helpPageContent").load(
+      "https://yoders-building-services.github.io/WebTrackPortalScripts/content/YoderHelpPage.html"
+    );
+  });
+</script>
