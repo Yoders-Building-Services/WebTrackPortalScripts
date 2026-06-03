@@ -8,6 +8,21 @@ sections. Served free via GitHub Pages.
 stopped serving shared-link files in a browser-usable way (wrong
 content-type, sandboxed), so the portal broke. Everything moved here.
 
+## Where to paste the header/footer scripts (in BisTrack)
+
+The two files in `webtrack-snippets/` are the blocks that go into BisTrack.
+Navigate to:
+
+> System Manager -> eBusiness -> eBusiness Taskpad -> WebTrack Manager
+> -> **Page Content** tab -> **Page Header Scripts** / **Page Footer Scripts**
+
+- `webtrack-snippets/YoderHeaderScripts.html` goes in **Page Header Scripts**
+- `webtrack-snippets/YoderFooterScripts.html` goes in **Page Footer Scripts**
+
+The page bodies (the "Please wait while content loads" placeholder divs in
+`webtrack-snippets/*Div.html`) live in the WebTrack page content itself, where
+the header script's `.load()` calls inject the real About/Home/Help content.
+
 ## Layout
 
 - `css/` — header and footer stylesheets
